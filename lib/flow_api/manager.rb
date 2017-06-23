@@ -11,7 +11,7 @@ module FlowApi
 
       def base_params
         {
-          api_token: ENV["FLOW_PROJECT_API_TOKEN"]
+          project_api_token: ENV["FLOW_PROJECT_API_TOKEN"]
         }
       end
 
