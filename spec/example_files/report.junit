@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='flowcicocopadUITests.xctest' tests='3' failures='0'>
+  <testsuite name='flowcicocopadTests' tests='2' failures='0'>
+    <testcase classname='flowcicocopadTests' name='testExample' time='0.003'/>
+    <testcase classname='flowcicocopadTests' name='testPerformanceExample' time='0.382'/>
+  </testsuite>
+  <testsuite name='flowcicocopadUITests' tests='1' failures='0'>
+    <testcase classname='flowcicocopadUITests' name='testExample' time='7.053'/>
+  </testsuite>
+</testsuites>
