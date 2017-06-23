@@ -1,11 +1,12 @@
 #! /usr/bin/env ruby
 
 require_relative "../lib/flow_project_manager"
+puts "ENV= #{ENV}"
 
 # NEED ENV
-puts "ENV[FLOW_API_BASIC_URL] = #{ENV[:FLOW_API_BASIC_URL]},
-      ENV[FLOW_API_PROJECT_TOKEN] = #{ENV[:FLOW_API_PROJECT_TOKEN]},
-      ENV[FLOW_PROJECT_ID] = #{ENV[:FLOW_PROJECT_ID]},
-      ENV[FLOW_JOB_ID] = #{ENV[:FLOW_JOB_ID]}"
+puts "ENV[FLOW_API_BASIC_URL] = #{ENV['FLOW_API_BASIC_URL']},
+      ENV[FLOW_API_PROJECT_TOKEN] = #{ENV['FLOW_API_PROJECT_TOKEN']},
+      ENV[FLOW_PROJECT_ID] = #{ENV['FLOW_PROJECT_ID']},
+      ENV[FLOW_JOB_ID] = #{ENV['FLOW_JOB_ID']}"
 puts "FILE_PATH = #{ARGV[0]}"
 FlowApi::Manager.send_test_log_json(ARGV[0])
