@@ -1,6 +1,6 @@
 require 'api_tools'
-require "crack"
 require "json"
+require_relative "../utils/junit_reader"
 
 module FlowApi
   class Rest < DefaultRest
@@ -34,7 +34,7 @@ module FlowApi
       end
 
       def send_test_log_json(file_path)
-        json_str = junit_file_to_hash(file_path).to_json
+        json_str = JUnitReader.build_json_from_juniter(file_path).to_json
         FlowApi::Rest.send_log_json ENV["FLOW_PROJECT_ID"], ENV["FLOW_JOB_ID"], json_str
       end
     end

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='flowcicocopadUITests.xctest' tests='5' failures='1'>
+  <testsuite name='flowcicocopadTests' tests='2' failures='0'>
+    <testcase classname='flowcicocopadTests' name='testExample' time='0.021'/>
+    <testcase classname='flowcicocopadTests' name='testPerformanceExample' time='0.572'/>
+  </testsuite>
+  <testsuite name='flowcicocopadUITests' tests='3' failures='1'>
+    <testcase classname='flowcicocopadUITests' name='testExample' time='8.887'/>
+    <testcase classname='flowcicocopadUITests' name='testFailure' time='8.683'/>
+    <testcase classname='flowcicocopadUITests' name='testFalse'>
+      <failure message='((nil) != nil) failed - Cannot find CalcView instance'>flowcicocopadUITests.m:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
