@@ -3,8 +3,8 @@
 require_relative "../lib/flow_project_manager"
 
 # NEED ENV
-puts "ENV[FLOW_API_BASIC_URL] = #{ENV['FLOW_DOMAIN']},
-      ENV[FLOW_API_PROJECT_TOKEN] = #{ENV['FLOW_PROJECT_API_TOKEN']},
+puts "ENV[FLOW_DOMAIN] = #{ENV['FLOW_DOMAIN']},
+      ENV[FLOW_PROJECT_API_TOKEN] = #{ENV['FLOW_PROJECT_API_TOKEN']},
       ENV[FLOW_PROJECT_ID] = #{ENV['FLOW_PROJECT_ID']},
       ENV[FLOW_JOB_ID] = #{ENV['FLOW_JOB_ID']}"
 puts "FILE_PATH = #{ARGV[0]}"
