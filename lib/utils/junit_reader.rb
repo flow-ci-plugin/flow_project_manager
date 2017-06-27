@@ -19,9 +19,10 @@ class JunitReader
         next if element.name != "testsuite"
         read_test_suite( element )
       end
-      testsuites.compact!
-      answer["testuites"] =  testsuites
-      answer.compact
+      testsuites.reject! {|m| m == nil}
+
+      answer["testsuites"] =  testsuites
+      answer
     end
     
     def read_test_suite(element)
@@ -34,7 +35,7 @@ class JunitReader
         next if element_testcase.name != "testcase"
         read_test_case(element_testcase)
       end
-      testcases.compact!
+      testcases.reject! {|m| m == nil}
 
       test_suite["testcases"]  = testcases
       test_suite

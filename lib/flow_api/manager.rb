@@ -34,7 +34,7 @@ module FlowApi
       end
 
       def send_test_log_json(file_path)
-        json_str = JUnitReader.build_json_from_juniter(file_path).to_json
+        json_str = JunitReader.build_json_from_juniter(file_path).to_json
         FlowApi::Rest.send_log_json ENV["FLOW_PROJECT_ID"], ENV["FLOW_JOB_ID"], json_str
       end
     end
